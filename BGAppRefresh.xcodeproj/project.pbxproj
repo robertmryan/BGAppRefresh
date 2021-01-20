@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8308EEFA25B7C13E0074AB3E /* BackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8308EEF925B7C13E0074AB3E /* BackgroundTaskManager.swift */; };
 		83880DBC2480668D00C70A32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83880DBB2480668D00C70A32 /* AppDelegate.swift */; };
 		83880DBE2480668D00C70A32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83880DBD2480668D00C70A32 /* SceneDelegate.swift */; };
 		83880DC02480668D00C70A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83880DBF2480668D00C70A32 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8308EEF925B7C13E0074AB3E /* BackgroundTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskManager.swift; sourceTree = "<group>"; };
+		8308EEFC25B7C7270074AB3E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8308EEFD25B7C7320074AB3E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		83880DB82480668D00C70A32 /* BGAppRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGAppRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83880DBB2480668D00C70A32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83880DBD2480668D00C70A32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +41,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8308EF0125B7CAFA0074AB3E /* App lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				83880DBB2480668D00C70A32 /* AppDelegate.swift */,
+				83880DBD2480668D00C70A32 /* SceneDelegate.swift */,
+			);
+			path = "App lifecycle";
+			sourceTree = "<group>";
+		};
+		8308EF0325B7CB130074AB3E /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				83880DC12480668D00C70A32 /* Main.storyboard */,
+				83880DC42480668F00C70A32 /* Assets.xcassets */,
+				83880DC62480668F00C70A32 /* LaunchScreen.storyboard */,
+				83880DC92480668F00C70A32 /* Info.plist */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		8308EF0425B7CB2D0074AB3E /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83880DBF2480668D00C70A32 /* ViewController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		8308EF0625B7CB390074AB3E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8308EEF925B7C13E0074AB3E /* BackgroundTaskManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		83880DAF2480668D00C70A32 = {
 			isa = PBXGroup;
 			children = (
+				8308EEFC25B7C7270074AB3E /* README.md */,
+				8308EEFD25B7C7320074AB3E /* LICENSE.md */,
 				83880DBA2480668D00C70A32 /* BGAppRefresh */,
 				83880DB92480668D00C70A32 /* Products */,
 			);
@@ -56,13 +98,10 @@
 		83880DBA2480668D00C70A32 /* BGAppRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				83880DBB2480668D00C70A32 /* AppDelegate.swift */,
-				83880DBD2480668D00C70A32 /* SceneDelegate.swift */,
-				83880DBF2480668D00C70A32 /* ViewController.swift */,
-				83880DC12480668D00C70A32 /* Main.storyboard */,
-				83880DC42480668F00C70A32 /* Assets.xcassets */,
-				83880DC62480668F00C70A32 /* LaunchScreen.storyboard */,
-				83880DC92480668F00C70A32 /* Info.plist */,
+				8308EF0125B7CAFA0074AB3E /* App lifecycle */,
+				8308EF0425B7CB2D0074AB3E /* View controllers */,
+				8308EF0625B7CB390074AB3E /* Controllers */,
+				8308EF0325B7CB130074AB3E /* Support files */,
 			);
 			path = BGAppRefresh;
 			sourceTree = "<group>";
@@ -94,7 +133,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Robert Ryan";
 				TargetAttributes = {
 					83880DB72480668D00C70A32 = {
@@ -139,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83880DC02480668D00C70A32 /* ViewController.swift in Sources */,
+				8308EEFA25B7C13E0074AB3E /* BackgroundTaskManager.swift in Sources */,
 				83880DBC2480668D00C70A32 /* AppDelegate.swift in Sources */,
 				83880DBE2480668D00C70A32 /* SceneDelegate.swift in Sources */,
 			);
@@ -192,6 +232,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +293,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
